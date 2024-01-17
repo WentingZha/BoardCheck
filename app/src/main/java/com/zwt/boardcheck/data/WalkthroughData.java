@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package com.zwt.boardcheck.ui.walkthrough;
+package com.zwt.boardcheck.data;
 
 import com.zwt.boardcheck.R;
-import com.zwt.boardcheck.ui.gallery.CarouselItem;
 
 import java.util.Arrays;
 import java.util.List;

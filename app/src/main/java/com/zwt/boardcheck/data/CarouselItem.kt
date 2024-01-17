@@ -1,4 +1,4 @@
-package com.zwt.boardcheck.ui.gallery
+package com.zwt.boardcheck.data
 
 data class CarouselItem(
     val drawableRes: Int = 0, val contentDescRes:Int = 0

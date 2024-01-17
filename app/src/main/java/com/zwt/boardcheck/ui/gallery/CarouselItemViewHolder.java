@@ -24,6 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.zwt.boardcheck.R;
+import com.zwt.boardcheck.data.CarouselItem;
 
 
 /** An {@link RecyclerView.ViewHolder} that displays an item inside a Carousel. */

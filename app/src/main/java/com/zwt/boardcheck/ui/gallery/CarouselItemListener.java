@@ -16,6 +16,8 @@
 
 package com.zwt.boardcheck.ui.gallery;
 
+import com.zwt.boardcheck.data.CarouselItem;
+
 /** An interface for items in a carousel. */
 interface CarouselItemListener {
   void onItemClicked(CarouselItem item, int position);

@@ -1,14 +1,24 @@
-package com.zwt.boardcheck.ui.top
+package com.zwt.boardcheck.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.zwt.boardcheck.data.BookResponse
 
 class TopViewModel : ViewModel() {
 
     //    private val _text = MutableLiveData<String>().apply {
 //        value = "This is home Fragment"
 //    }
+
+    private var bookResult: MutableLiveData<BookResponse> = MutableLiveData()
+
+    fun getTopItems(): LiveData<BookResponse> {
+
+        return bookResult
+
+    }
+
     private val _title1 = MutableLiveData<String>().apply {
         value = "Unlock!"
     }

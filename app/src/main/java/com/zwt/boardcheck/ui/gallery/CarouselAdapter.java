@@ -25,6 +25,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
 import com.zwt.boardcheck.R;
+import com.zwt.boardcheck.data.CarouselItem;
 
 
 /** An adapter that displays {@link CarouselItem}s for a Carousel. */

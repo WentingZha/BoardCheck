@@ -1,4 +1,4 @@
-package com.zwt.boardcheck.ui.walkthrough
+package com.zwt.boardcheck.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

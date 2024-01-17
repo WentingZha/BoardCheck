@@ -31,4 +31,10 @@
         android:name="com.zwt.boardcheck.ui.walkthrough.WalkDetailFragment"
         android:label="fragment_walk_detail"
         tools:layout="@layout/fragment_walk_detail" />
+
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="com.zwt.boardcheck.ui.bookshelf.BookFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book_list" />
 </navigation>

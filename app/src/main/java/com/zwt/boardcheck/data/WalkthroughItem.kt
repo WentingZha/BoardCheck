@@ -1,4 +1,4 @@
-package com.zwt.boardcheck.ui.walkthrough
+package com.zwt.boardcheck.data
 
 data class WalkthroughItem(
     val walkthroughTitle: Int,

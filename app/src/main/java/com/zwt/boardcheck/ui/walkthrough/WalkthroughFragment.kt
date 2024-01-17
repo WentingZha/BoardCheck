@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.zwt.boardcheck.R
 import com.zwt.boardcheck.databinding.FragmentWalkthroughBinding
+import com.zwt.boardcheck.viewmodel.WalkthroughViewModel
 import java.util.Locale
 
 class WalkthroughFragment : Fragment() {

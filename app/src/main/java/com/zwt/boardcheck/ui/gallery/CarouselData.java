@@ -17,6 +17,7 @@
 package com.zwt.boardcheck.ui.gallery;
 
 import com.zwt.boardcheck.R;
+import com.zwt.boardcheck.data.CarouselItem;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +27,7 @@ import java.util.List;
  */
 class CarouselData {
 
-  private CarouselData() { }
+  CarouselData() { }
 
   static List<CarouselItem> createItems() {
     return Arrays.asList(

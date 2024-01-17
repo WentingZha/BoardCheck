@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.zwt.boardcheck.R
 import com.zwt.boardcheck.databinding.FragmentTopBinding
+import com.zwt.boardcheck.viewmodel.TopViewModel
 import java.util.Locale
 
 class TopFragment : Fragment() {
@@ -33,6 +34,7 @@ class TopFragment : Fragment() {
         topViewModel.intro1.observe(viewLifecycleOwner){
             introList.add(it)
         }
+
         topViewModel.intro2.observe(viewLifecycleOwner){
             introList.add(it)
         }

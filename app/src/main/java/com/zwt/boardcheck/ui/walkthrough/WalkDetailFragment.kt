@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.zwt.boardcheck.databinding.FragmentWalkDetailBinding
+import com.zwt.boardcheck.viewmodel.WalkDetailViewModel
 
 class WalkDetailFragment : Fragment() {
 

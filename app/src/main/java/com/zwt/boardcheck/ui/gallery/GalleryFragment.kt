@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.carousel.CarouselLayoutManager
 import com.zwt.boardcheck.R
 import com.zwt.boardcheck.databinding.FragmentGalleryBinding
+import com.zwt.boardcheck.viewmodel.GalleryViewModel
 
 class GalleryFragment : Fragment() {
 
@@ -42,7 +43,7 @@ class GalleryFragment : Fragment() {
                     position
                 )
                 //Enlarge the selected picture
-                binding.carouselImgFull.setImageResource(carouselImageList.get(position).drawableRes)
+                binding.carouselImgFull.setImageResource(carouselImageList[position].drawableRes)
             }
         carouselRecyclerView?.adapter = adapter
 
