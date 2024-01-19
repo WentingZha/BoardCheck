@@ -10,14 +10,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.zwt.boardcheck.R
 import com.zwt.boardcheck.adapter.BookAdapter
-import com.zwt.boardcheck.data.Item
+import com.zwt.boardcheck.data.remote.Item
 import com.zwt.boardcheck.viewmodel.BookViewModel
 
 class BookFragment : Fragment() {
 
     private val bookAdapter = BookAdapter(mutableListOf())
     private lateinit var recyclerView: RecyclerView
-
     fun updateList(list:List<Item>){
         bookAdapter.updateBookList(list)
         bookAdapter.notifyDataSetChanged()

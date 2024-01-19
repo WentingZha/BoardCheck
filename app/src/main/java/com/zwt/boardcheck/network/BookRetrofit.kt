@@ -1,7 +1,7 @@
 package com.zwt.boardcheck.network
 
 import android.util.Log
-import com.zwt.boardcheck.data.BookResponse
+import com.zwt.boardcheck.data.remote.BookResponse
 import com.zwt.boardcheck.util.Const.Companion.BASE_URL
 import retrofit2.Call
 import retrofit2.Retrofit

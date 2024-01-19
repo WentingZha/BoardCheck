@@ -2,21 +2,33 @@ package com.zwt.boardcheck.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.zwt.boardcheck.data.BookResponse
-
-class TopViewModel : ViewModel() {
+import androidx.lifecycle.viewModelScope
+import com.zwt.boardcheck.data.TopItem
+import com.zwt.boardcheck.data.local.TopEntity
+import com.zwt.boardcheck.repository.DefaultTopRepository
+import com.zwt.boardcheck.repository.TopRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+@HiltViewModel
+class TopViewModel @Inject constructor(
+    private val topRepository: DefaultTopRepository,
+) : ViewModel() {
 
     //    private val _text = MutableLiveData<String>().apply {
 //        value = "This is home Fragment"
 //    }
 
-    private var bookResult: MutableLiveData<BookResponse> = MutableLiveData()
+    private var topItems: MutableLiveData<List<TopEntity>> = MutableLiveData()
 
-    fun getTopItems(): LiveData<BookResponse> {
-
-        return bookResult
-
+    fun insertAll(title: String, intro: String,company:String) = viewModelScope.launch(){
+        topRepository.insert(title, intro,company)
+    }
+    suspend fun getAll(): LiveData<List<TopEntity>> {
+        topItems.postValue(topRepository.getAll())
+        return topItems
     }
 
     private val _title1 = MutableLiveData<String>().apply {
@@ -91,9 +103,6 @@ class TopViewModel : ViewModel() {
     private val _company6 = MutableLiveData<String>().apply {
         value = "Fantasy Flight Games"
     }
-
-
-//    val text: LiveData<String> = _text
 
     val intro1: LiveData<String> = _intro1
     val intro2: LiveData<String> = _intro2

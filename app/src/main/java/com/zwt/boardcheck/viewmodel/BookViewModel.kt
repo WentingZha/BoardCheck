@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.zwt.boardcheck.network.BookRetrofit
-import com.zwt.boardcheck.data.BookResponse
+import com.zwt.boardcheck.data.remote.BookResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

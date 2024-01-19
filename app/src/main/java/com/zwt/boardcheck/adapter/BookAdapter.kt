@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.zwt.boardcheck.R
-import com.zwt.boardcheck.data.Item
+import com.zwt.boardcheck.data.remote.Item
 
 class BookAdapter(private var bookList: List<Item>) :
     RecyclerView.Adapter<BookAdapter.BookHolder>() {

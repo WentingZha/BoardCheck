@@ -1,4 +1,4 @@
-package com.zwt.boardcheck.data
+package com.zwt.boardcheck.data.remote
 
 data class BookResError(
     val error: Error

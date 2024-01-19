@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">BoardCheck</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -30,4 +32,48 @@
     <string name="game7_intro" translatable="false">Answer yes or no</string>
 
 
+    <string name="top_title1" >Unlock</string>
+    <string name="top_title2" translatable="false">T.I.M.E stories</string>
+    <string name="top_title3" translatable="false">Chronicles of Crime</string>
+    <string name="top_title4" translatable="false">Lost in space</string>
+
+    <string name="top_company1" >JD éditions</string>
+    <string name="top_company2" translatable="false">Space Cowboys</string>
+    <string name="top_company3" translatable="false">Lucky Duck Games</string>
+    <string name="top_company4" translatable="false">Heroes Game</string>
+
+    <string name="top_intro1" >Calculation is the direction</string>
+    <string name="top_intro2" translatable="false">Save dangers on different timelines</string>
+    <string name="top_intro3" translatable="false">The world is Nonlinear</string>
+    <string name="top_intro4" translatable="false">Rebuild the space with cards</string>
+
+    <string-array name="top_title">
+        <item>Unlock!</item>
+        <item>T.I.M.E stories</item>
+        <item>Chronicles of Crime</item>
+        <item>Lost in space</item>
+        <item>Escape Room the game</item>
+        <item>ArkHam Horror</item>
+        <item>Singularity</item>
+    </string-array>
+
+    <string-array name="top_intro">
+        <item>Calculation is the direction</item>
+        <item>Save dangers on different timelines</item>
+        <item>The world is Nonlinear</item>
+        <item>Rebuild the space with cards</item>
+        <item>You have 60 minutes to escape</item>
+        <item>Open world of Cthulhu</item>
+        <item>Stop the crime before it started</item>
+    </string-array>
+
+    <string-array name="top_company">
+        <item>JD éditions</item>
+        <item>Space Cowboys</item>
+        <item>Lucky Duck Games</item>
+        <item>Heroes Game</item>
+        <item>Broadway Toys</item>
+        <item>Fantasy Flight Games</item>
+        <item>K games</item>
+    </string-array>
 </resources>
